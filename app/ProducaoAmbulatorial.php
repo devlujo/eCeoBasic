@@ -1,0 +1,71 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ProducaoAmbulatorial extends Model
+{
+    protected $table = 'ceo_prod';
+    
+    protected $filable = [
+        'PA_CODUNI',
+        'PA_GESTAO',
+        'PA_CONDIC',
+        'PA_UFMUN',
+        'PA_REGCT',
+        'PA_INOCUT',
+        'PA_INCURG',
+        'PA_TUPS',
+        'PA_TIPPRE',
+        'PA_MN_IND',
+        'PA_CNPJCPF',
+        'PA_CNPJMNT',
+        'PA_CNPJ_CC',
+        'PA_MVM',
+        'PA_CMP',
+        'PA_PROC_ID',
+        'PA_TPFIN',
+        'PA_SUBFIN',
+        'PA_NIVCPL',
+        'PA_DOCOIRG',
+        'PA_AUTORIZ',
+        'PA_CNSMED',
+        'PA_MOTSAI',
+        'PA_OBITO',
+        'PA_ENCERR',
+        'PA_PERMAN',
+        'PA_ALTA',
+        'PA_TRANSF',
+        'PA_CIDPRI',
+        'PA_CIDSEC',
+        'PA_CIDCAS',
+        'PA_CATEND',
+        'PA_IDADE',
+        'PA_IDADEMIN',
+        'PA_IDADEMAX',
+        'PA_FLIDADE',
+        'PA_SEXO',
+        'PA_RACACOR',
+        'PA_MUNPCN',
+        'PA_QTDPRO',
+        'PA_QTDAPR',
+        'PA_VALPRO',
+        'PA_VALAPR',
+        'PA_UFDIF',
+        'PA_MNDIF',
+        'PA_DIF_VAL',
+        'NU_VPA_TOT',
+        'NU_PA_TOT',
+        'PA_INDICA',
+        'PA_CODOCO',
+        'PA_FLQT',
+        'PA_FLER',
+        'PA_ETNIA',
+        'PA_VL_CL',
+        'PA_VL_INC',
+        'PA_SRV_C',
+        'PA_INE',
+        'PA_NAT_JUR',
+    ];
+}
