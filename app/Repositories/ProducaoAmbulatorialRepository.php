@@ -68,8 +68,10 @@ class ProducaoAmbulatorialRepository extends BaseRepository
             ->count();
     }
     public function media($num1, $num2){
-        $calculo = number_format(($num1/$num2)*100,2,'.','' )."%";
-        return $calculo;
+        if($num1 && $num2){
+            $calculo = number_format(($num1/$num2)*100,2,'.','' )."%";
+            return $calculo;
+        }return 0;
     }
     public function dadosUnidade($coduni){
         return CeoUnidade::where('codigo_unidade','=', $coduni)->first();

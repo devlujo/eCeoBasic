@@ -25,13 +25,9 @@ class ProducaoAmbulatorialController extends Controller
      */
     public function index()
     {
-//      $ceoproducao = ProducaoAmbulatorial::take(100)->paginate(20);
         $municipios = Municipio::all();
         $unidades = CeoUnidade::all();
-//        $relacaoTeste = CeoUnidade::find(1);
-//        $relacaoTesteM = CeoUnidade::find(1);
-        return view('ambulatorial.index',
-            compact('unidades','municipios'));
+        return view('ambulatorial.index', compact('unidades','municipios'));
     }
     /**
      * Show the form for creating a new resource.

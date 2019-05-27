@@ -16,7 +16,6 @@ class CeoUnidade extends Model
         'descricao'
             ];
 
-
     public function tipo()
     {
         return $this->hasOne(TipoCeo::class, 'id', 'tipo_id' );
