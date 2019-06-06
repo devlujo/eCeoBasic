@@ -144,9 +144,6 @@
                                     </div>
                                 </div>
                                 <br>
-
-                                <!-- RETIRAR O LABEL DE TODOS OS CAMPOS ENGLOBANDO TODO O INPUT-->
-
                                 <div class="row">
                                     <div class="col-md-12 text-center">
                                         <label for="">

@@ -57,8 +57,10 @@ class ProducaoAmbulatorialController extends Controller
         $cirurgiaUnidade = $this->producaoAmbulatorialRepository->totalCirurgiaOral($codigoUnidade, $data);
         $restauradorUnidade = $this->producaoAmbulatorialRepository->totalRestaurador($codigoUnidade, $data);
         $molarUnidade = $this->producaoAmbulatorialRepository->totalMolar($codigoUnidade, $data);
+
         $metaEndo = $this->producaoAmbulatorialRepository->media($molarUnidade,$endodontiaUnidade);
         $metaAtencao = $this->producaoAmbulatorialRepository->media($restauradorUnidade,$basicoUnidade);
+
         return view('ambulatorial.resultado',
             compact( 'basicoUnidade',
              'periodontiaUnidade',

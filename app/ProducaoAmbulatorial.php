@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProducaoAmbulatorial extends Model
 {
-    protected $table = 'ceo_prod';
+    protected $table = '2019_ceo_prod';
     
     protected $filable = [
         'PA_CODUNI',

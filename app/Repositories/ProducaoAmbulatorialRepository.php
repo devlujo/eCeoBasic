@@ -30,42 +30,42 @@ class ProducaoAmbulatorialRepository extends BaseRepository
             ->where('PA_CODUNI','=', $coduni)
             ->where('PA_CMP', '=', $data)
             ->whereIn('PA_PROC_ID', ProcedimentosUtil::basicos())
-            ->count();
+            ->sum('PA_QTDPRO');
     }
     public function totalPeriodontia($coduni, $data){
         return ProducaoAmbulatorial::get()
             ->where('PA_CODUNI','=', $coduni)
             ->where('PA_CMP', '=', $data)
             ->whereIn('PA_PROC_ID', ProcedimentosUtil::periodontia())
-            ->count();
+            ->sum('PA_QTDPRO');
     }
     public function totalEndodontia($coduni, $data){
         return ProducaoAmbulatorial::get()
             ->where('PA_CODUNI','=', $coduni)
             ->where('PA_CMP', '=', $data)
             ->whereIn('PA_PROC_ID', ProcedimentosUtil::endodontia())
-            ->count();
+            ->sum('PA_QTDPRO');
     }
     public function totalCirurgiaOral($coduni, $data){
         return ProducaoAmbulatorial::get()
             ->where('PA_CODUNI','=', $coduni)
             ->where('PA_CMP', '=', $data)
             ->whereIn('PA_PROC_ID', ProcedimentosUtil::cirurgiaOral())
-            ->count();
+            ->sum('PA_QTDPRO');
     }
     public function totalRestaurador($coduni, $data){
         return ProducaoAmbulatorial::get()
             ->where('PA_CODUNI','=', $coduni)
             ->where('PA_CMP', '=', $data)
             ->whereIn('PA_PROC_ID', ProcedimentosUtil::restauradores())
-            ->count();
+            ->sum('PA_QTDPRO');
     }
     public function totalMolar($coduni, $data){
         return ProducaoAmbulatorial::get()
             ->where('PA_CODUNI','=', $coduni)
             ->where('PA_CMP', '=', $data)
             ->whereIn('PA_PROC_ID', ProcedimentosUtil::molares())
-            ->count();
+            ->sum('PA_QTDPRO');
     }
     public function media($num1, $num2){
         if($num1 && $num2){
